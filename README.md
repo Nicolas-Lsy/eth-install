@@ -12,44 +12,39 @@ $ pip install pyethapp
 
 # 开始！
 
-准备好捐款了吗？下面是如何建立地方发展pyethapp。
+准备好了吗？下面是如何建立地方发展pyethapp。
 
-叉pyethapp回购在GitHub上。
+pyethapp在GitHub上。
 
-克隆你的叉子：
+克隆你的分支：
 
-$ git clone git @ GitHub网站：your_name_here / pyethapp.git
+$ git clone git@github.com:your_name_here/pyethapp.git
 
-安装您的本地副本为virtualenv。假设你有virtualenvwrapper安装，这是你如何建立你的叉子地方发展：
+安装您的本地副本为virtualenv。假设你有virtualenvwrapper安装，如何建立你的分叉：
 
-mkvirtualenv美元pyethapp
 
-$ cd pyethapp /
+    $ mkvirtualenv pyethapp
+    $ cd pyethapp/
+    $ python setup.py develop
 
-python setup.py美元发展
+创造一个分支：
 
-为地方发展创造一个分支：
-
-$ git checkout -你修正或特征B的名字
+ $ git checkout -b name-of-your-bugfix-or-feature
 
 现在您可以在本地进行更改了。
 
-当您完成更改后，请检查您的变化通过flake8和测试，包括测试其他Python版本与弓形虫：
+当您完成更改后，请检查您的变化通过flake8和测试，包括测试其他Python版本：
 
-flake8美元pyethapp试验
-
-python setup.py美元测试
-
-托克斯美元
+    $ flake8 pyethapp tests 
+    $ python setup.py test 
+    $ tox
 
 让flake8和TOX，只是pip安装它们到你的virtualenv。
 
 提交你的修改并把你分到Github：
 
-Git加。
-
-您的详细描述您的更改。
-
-$ git push起源的名字你的修正或特征
+    $ git add .
+    $ git commit -m "Your detailed description of your changes."
+    $ git push origin name-of-your-bugfix-or-feature 
 
 通过GitHub网站提交pull请求。
