@@ -48,3 +48,15 @@ $ git clone git@github.com:your_name_here/pyethapp.git
     $ git push origin name-of-your-bugfix-or-feature 
 
 通过GitHub网站提交pull请求。
+
+
+
+#  操作 
+
+
+    git clone https://github.com/ethereum/pyethapp
+    cd pyethapp
+    python setup.py install
+    pyethapp (shows help)
+    pyethapp run (starts the client)
+
